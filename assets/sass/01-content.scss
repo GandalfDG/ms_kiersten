@@ -10,17 +10,17 @@
 //-------------------------------------------------------------------------------
 
 // Colors
-$color-background : #061C30;
-$color-text       : #848d96;
-$color-link       : #848d96;
-$color-link-hover : #CA486d;
-$color-maverick   : #47bec7;
-$color-tagline    : #CCCCCC;
+$color-background : #343837;
+$color-text : #afb9c4;
+$color-link : #848d96;
+$color-link-hover : #59da56;
+$color-maverick : #59da56;
+$color-tagline : #CCCCCC;
 
 // Breakpoints
-$bp-smallish      : 1200px;
-$bp-tablet        : 800px;
-$bp-mobile        : 500px;
+$bp-smallish : 1200px;
+$bp-tablet : 800px;
+$bp-mobile : 500px;
 
 // Images
 // $image-background : url('../../images/background.jpg');
@@ -30,8 +30,13 @@ $bp-mobile        : 500px;
 //-------------------------------------------------------------------------------
 
 @keyframes fadein {
-    from { opacity: 0;}
-    to   { opacity: 1;}
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 //-------------------------------------------------------------------------------
@@ -85,7 +90,8 @@ body.page-template-page-fullsingle-split {
     height: 100vh;
     // background-image: $image-background;
     // background-position:center center;
-    background-size:cover;
+    background-size: cover;
+    border-right: 3px solid rgb(102, 102, 102);
 
     @media (max-width: $bp-tablet ) {
       height: 80vh;
@@ -103,8 +109,8 @@ body.page-template-page-fullsingle-split {
     min-height: 100vh;
     display: flex;
     align-items: center;
-      justify-content: center;
-      overflow: auto;
+    justify-content: center;
+    overflow: auto;
 
     @media (max-width: $bp-tablet ) {
       width: 100%;
@@ -115,7 +121,7 @@ body.page-template-page-fullsingle-split {
       padding: 80px;
       max-width: 640px;
       margin-top: auto;
-        margin-bottom: auto;
+      margin-bottom: auto;
 
       @media (max-width: $bp-smallish ) {
         padding: 60px;
@@ -213,62 +219,80 @@ body.page-template-page-fullsingle-split {
     line-height: inherit;
   }
 
-  h1, .h1,
-  h2, .h2,
-  h3, .h3,
-  h4, .h4,
-  h5, .h5,
-  h6, .h6 {
+  h1,
+  .h1,
+  h2,
+  .h2,
+  h3,
+  .h3,
+  h4,
+  .h4,
+  h5,
+  .h5,
+  h6,
+  .h6 {
     font-style: normal;
     font-weight: normal;
     color: inherit;
   }
 
-  h1 small, .h1 small,
-  h2 small, .h2 small,
-  h3 small, .h3 small,
-  h4 small, .h4 small,
-  h5 small, .h5 small,
-  h6 small, .h6 small {
+  h1 small,
+  .h1 small,
+  h2 small,
+  .h2 small,
+  h3 small,
+  .h3 small,
+  h4 small,
+  .h4 small,
+  h5 small,
+  .h5 small,
+  h6 small,
+  .h6 small {
     line-height: 0;
   }
 
-  h1, .h1 {
+  h1,
+  .h1 {
     font-size: 1.5em;
     line-height: inherit;
     margin-top: 0;
     margin-bottom: 20px;
   }
 
-  h2, .h2 {
+  h2,
+  .h2 {
     font-size: 1.25em;
     line-height: inherit;
     margin-top: 0;
     margin-bottom: 20px;
   }
 
-  h3, .h3 {
+  h3,
+  .h3 {
     font-size: 1.1875em;
     line-height: inherit;
     margin-top: 0;
     margin-bottom: 20px;
   }
 
-  h4, .h4 {
+  h4,
+  .h4 {
     font-size: 1.125em;
     line-height: inherit;
     margin-top: 0;
     margin-bottom: 20px;
   }
 
-  h5, .h5 {
+  h5,
+  .h5 {
     font-size: 1.0625em;
     line-height: inherit;
     margin-top: 0;
     margin-bottom: 20px;
   }
 
-  h6, .h6 {
+  h6,
+  .h6 {
     font-size: 1em;
     line-height: inherit;
     margin-top: 0;
@@ -297,7 +321,10 @@ body.page-template-page-fullsingle-split {
     list-style-type: decimal;
   }
 
-  ul ul, ol ul, ul ol, ol ol {
+  ul ul,
+  ol ul,
+  ul ol,
+  ol ol {
     margin-left: 1.25em;
     margin-bottom: 0;
   }
@@ -319,7 +346,7 @@ body.page-template-page-fullsingle-split {
 .split-lists {
 
   .split-list {
-    width: 30%;
+    width: 40%;
     display: inline-block;
     margin-bottom: 40px;
     vertical-align: top;
@@ -329,9 +356,9 @@ body.page-template-page-fullsingle-split {
     }
 
     h3 {
-      font-weight: 400;
-      text-transform: uppercase;
-      font-size: 11px;
+      font-weight: 800;
+      text-transform: lowercase;
+      font-size: 24px;
       line-height: 11px;
       margin-bottom: 31px;
       color: $color-text;
@@ -343,8 +370,8 @@ body.page-template-page-fullsingle-split {
 
 
       li {
-        font-size: 16px;
-        line-height: 16px;
+        font-size: 20px;
+        line-height: 20px;
         margin-bottom: 12px;
 
         a {
@@ -396,25 +423,29 @@ body.page-template-page-fullsingle-split {
 // YouTube
 
 .split-video {
-  overflow:hidden;
-  position:relative;
+  overflow: hidden;
+  position: relative;
 }
-.video-wrap{
-  position:absolute;
-  top:50%;
-  left:50%;
-  transform:translate(-50%,-50%);
+
+.video-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
+
 .video-container {
-  position:relative;
-  overflow:hidden;
+  position: relative;
+  overflow: hidden;
   height: 56.25vw;
   width: 100vw;
+
   @media (max-aspect-ratio:16/9) {
     height: 100vh;
     width: 177.7777777778vh; // this is for the ration 16:9
   }
 }
+
 .video-container iframe,
 .video-container object,
 .video-container embed {
@@ -428,8 +459,8 @@ body.page-template-page-fullsingle-split {
 // Self-Hosted
 
 video.video {
-  object-fit      : cover;
-  object-position : 50% 50%;
-  width           : 100%;
-  height          : 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  width: 100%;
+  height: 100%;
 }

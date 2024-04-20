@@ -33,8 +33,8 @@ copyright = "&copy;2024 Jack Case"
     # Image
     [params.visual.image]
       enable = true
-      file = "images/kiersten-feature.jpg"
-      position = "right top"
+      file = "images/kiersten-cropped.jpg"
+      position = "center top"
 
     # Video
     [params.visual.video]
@@ -48,7 +48,7 @@ copyright = "&copy;2024 Jack Case"
   # Links List #1
   [[params.links]]
     [params.links.list1]
-      heading = "Social"
+      heading = "My Work"
 
       [[params.links.list1.link]]
         text = "Youtube"
@@ -68,7 +68,7 @@ copyright = "&copy;2024 Jack Case"
   # Links List #2
   [[params.links]]
     [params.links.list2]
-      heading = "Contact"
+      heading = "Contact Me"
 
       [[params.links.list2.link]]
         text = "Email"
