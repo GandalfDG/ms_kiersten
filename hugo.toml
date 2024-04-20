@@ -1,5 +1,5 @@
 # Site settings
-baseURL = "https://example.com"
+baseURL = "https://gandalfdg.github.io/"
 languageCode = "en-US"
 title = "Ms. Kiersten"
 theme = "hugo-split-theme"

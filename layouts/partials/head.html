@@ -21,7 +21,7 @@
 {{ with .Site.Params.favicon }}<link rel="icon" href="{{ . | absURL }}" />{{ end }}
 
 <!-- Styles -->
-{{ $opts := dict "transpiler" "dartsass" "targetPath" "css/style.css" }}
+{{ $opts := dict "transpiler" "dartsass" "targetPath" "assets/css/style.css" }}
 {{ with resources.Get "sass/split.scss" | toCSS $opts | minify | fingerprint }}
   <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
 {{ end }}
