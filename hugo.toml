@@ -75,6 +75,22 @@ copyright = "&copy;2024 Jack Case"
         url = "mailto:mskierstenmusic@gmail.com"
 
 
+
+
+[menus]
+  [[menus.main]]
+    name = 'Home'
+    pageRef = '/'
+    weight = 10
+  [[menus.main]]
+    name = 'Events'
+    pageRef = '/events'
+    weight = 20
+
+
+
+
+
   # Links List #3
   # [[params.links]]
   #   [params.links.list3]
