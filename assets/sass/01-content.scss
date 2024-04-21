@@ -118,10 +118,9 @@ body.page-template-page-fullsingle-split {
     }
 
     .split-content-vertically-center {
-      padding: 80px;
-      max-width: 640px;
-      margin-top: auto;
-      margin-bottom: auto;
+      padding-inline: 80px;
+      padding-block: 40px;
+      max-width: 700px;
 
       @media (max-width: $bp-smallish ) {
         padding: 60px;
