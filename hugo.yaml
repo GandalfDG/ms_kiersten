@@ -34,7 +34,7 @@ params:
     - list1:
         heading: My Work
         link:
-          - text: Youtube
+          - text: YouTube
             url: 'https://www.youtube.com/@Ms.KierstensMusicCorner'
             new_tab: true
           - text: Instagram
