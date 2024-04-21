@@ -1,6 +1,6 @@
 +++
 title = "Ms. Kiersten"
-tagline = "Hi! I'm Ms. Kiersten, I'm so glad to meet you!"
+tagline = "Welcome to Ms. Kiersten’s Music Corner!"
 +++
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus et eros vitae porta. Vestibulum semper dictum hendrerit. Integer aliquet elit ac tempor volutpat. Fusce pretium euismod vestibulum. Vestibulum tempus odio erat, et commodo odio tristique ac. Cras et ultrices justo. Nullam at orci sapien. Cras convallis, purus et vestibulum finibus, metus leo volutpat nisi, eget posuere lorem est at urna. 
+This is where melodies spark imaginations and rhythms make hearts dance! As a dedicated children's musician, I delight in crafting enchanting tunes that captivate young minds and bring joy to families everywhere. Explore my new singles, each bursting with catchy tunes and meaningful lyrics that celebrate the magic of childhood. Whether you're looking to add a musical touch to a special event or seeking vibrant entertainment for TV shows, I bring boundless energy and creativity to every performance. Join me on a whimsical journey through the power of music, where laughter, learning, and unforgettable melodies await! 
