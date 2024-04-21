@@ -1,4 +1,4 @@
-baseURL: 'https://gandalfdg.github.io/'
+baseURL: 'https://www.mskiersten.com/'
 languageCode: en-US
 title: Ms. Kiersten
 theme: hugo-split-theme
@@ -12,6 +12,8 @@ relativeURLs: true
 uglyURLs: true
 googleAnalytics: ''
 copyright: '&copy;2024 Jack Case'
+
+
 params:
   author: Kiersten Case
   description: Hi! I'm Ms. Kiersten
@@ -27,6 +29,7 @@ params:
       enable: false
       mute: true
       file: videos/background.mp4
+  
   links:
     - list1:
         heading: My Work
@@ -45,3 +48,14 @@ params:
         link:
           - text: Email
             url: 'mailto:mskierstenmusic@gmail.com'
+
+
+menus:
+  main:
+    - name: Home
+      url: ''
+      weight: 10
+    - name: Events
+      url: events
+      weight: 20
+
