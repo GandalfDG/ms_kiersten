@@ -3,7 +3,7 @@ baseURL = "https://gandalfdg.github.io/"
 languageCode = "en-US"
 title = "Ms. Kiersten"
 theme = "hugo-split-theme"
-disableKinds = ["section", "taxonomy", "RSS", "sitemap"]
+disableKinds = [ "taxonomy", "RSS", "sitemap"]
 disableHugoGeneratorInject = true
 
 # Local preview mode
@@ -14,7 +14,7 @@ uglyURLs = true
 googleAnalytics = ""
 
 # Copyright
-copyright = "&copy;2024 Jack Case"
+copyright = "&copy;2024 Kiersten Case"
 
 [params]
 
@@ -22,7 +22,6 @@ copyright = "&copy;2024 Jack Case"
   author = "Kiersten Case"
   description = "Hi! I'm Ms. Kiersten"
   shareImage = "images/social.jpg"
-  twitterHandle = "onepagelove"
 
   # Favicon
   favicon = "favicon.ico"
@@ -79,13 +78,13 @@ copyright = "&copy;2024 Jack Case"
 
 [menus]
   [[menus.main]]
-    name = 'Home'
-    pageRef = '/'
-    weight = 10
+  name = 'Home'
+  url = ''
+  weight = 10
   [[menus.main]]
-    name = 'Events'
-    pageRef = '/events'
-    weight = 20
+  name = 'Events'
+  url = 'events'
+  weight = 20
 
 
 
