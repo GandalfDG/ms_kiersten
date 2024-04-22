@@ -28,14 +28,13 @@
       <div class="split-content-vertically-center">
         {{ partial "navbar" . }}
 
-        <!-- Intro -->
-        {{ partial "intro" . }}
-
-        <!-- Main -->
-        {{ block "main" .  }}
-          <!-- Bio -->
-          {{ partial "bio" . }}
-        {{ end }}
+        <ul>
+          {{ range .Pages}}
+            <li>
+              <a href="{{ .RelPermalink}}">{{ .LinkTitle }}</a>
+            </li>
+          {{ end }}
+        </ul>
 
         <!-- Footer -->
         {{ partial "footer" . }}

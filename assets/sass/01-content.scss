@@ -108,7 +108,7 @@ body.page-template-page-fullsingle-split {
     width: 50%;
     min-height: 100vh;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
     overflow: auto;
 
@@ -469,6 +469,7 @@ video.video {
 nav {
 
   margin-bottom: 1em;
+  padding-inline: 80px;
 
   a {
     color: $color-link;
