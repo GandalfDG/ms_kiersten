@@ -17,8 +17,8 @@ copyright: '&copy;2024 Jack Case'
 params:
   author: Kiersten Case
   description: Hi! I'm Ms. Kiersten
-  shareImage: images/social.jpg
-  twitterHandle: onepagelove
+  shareImage: images/kiersten-cropped.jpg
+  # twitterHandle: onepagelove
   favicon: favicon.ico
   visual:
     image:
