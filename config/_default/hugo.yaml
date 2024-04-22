@@ -52,7 +52,7 @@ menus:
     - name: Home
       pageRef: /
       weight: 10
-    - name: Events
-      pageRef: events
-      weight: 20
+    # - name: Events
+    #   pageRef: events
+    #   weight: 20
 
