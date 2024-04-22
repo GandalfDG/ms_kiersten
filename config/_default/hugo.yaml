@@ -3,13 +3,12 @@ languageCode: en-US
 title: Ms. Kiersten
 theme: hugo-split-theme
 disableKinds:
-  - section
   - taxonomy
   - RSS
   - sitemap
-relativeURLs: true
+# relativeURLs: true
 uglyURLs: true
-googleAnalytics: ''
+# googleAnalytics: ''
 copyright: '&copy;2024 Kiersten Case'
 
 
@@ -51,9 +50,9 @@ params:
 menus:
   main:
     - name: Home
-      url: ''
+      pageRef: /
       weight: 10
     - name: Events
-      url: events
+      pageRef: events
       weight: 20
 
