@@ -1,0 +1,58 @@
+baseURL: 'https://www.mskiersten.com/'
+languageCode: en-US
+title: Ms. Kiersten
+theme: hugo-split-theme
+disableKinds:
+  - taxonomy
+  - RSS
+  - sitemap
+# relativeURLs: true
+uglyURLs: true
+# googleAnalytics: ''
+copyright: '&copy;2024 Kiersten Case'
+
+
+params:
+  author: Kiersten Case
+  description: Hi! I'm Ms. Kiersten
+  shareImage: images/social.jpg
+  favicon: favicon.ico
+  visual:
+    image:
+      enable: true
+      file: images/kiersten-cropped.jpg
+      position: center top
+    video:
+      enable: false
+      mute: true
+      file: videos/background.mp4
+  
+  links:
+    - list1:
+        heading: My Work
+        link:
+          - text: YouTube
+            url: 'https://www.youtube.com/@Ms.KierstensMusicCorner'
+            new_tab: true
+          - text: Instagram
+            url: 'https://www.instagram.com/ms.kierstensmusicroom/'
+            new_tab: true
+          - text: TikTok
+            url: 'https://www.tiktok.com/@ms..kiersten'
+            new_tab: true
+    - list2:
+        heading: Contact Me
+        link:
+          - text: Email
+            url: 'mailto:mskierstenmusic@gmail.com'
+
+
+menus:
+  main:
+    - name: Home
+      pageRef: /
+      weight: 10
+    - name: Events
+      pageRef: events
+      weight: 20
+
