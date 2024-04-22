@@ -7,18 +7,16 @@ disableKinds:
   - taxonomy
   - RSS
   - sitemap
-disableHugoGeneratorInject: true
 relativeURLs: true
 uglyURLs: true
 googleAnalytics: ''
-copyright: '&copy;2024 Jack Case'
+copyright: '&copy;2024 Kiersten Case'
 
 
 params:
   author: Kiersten Case
   description: Hi! I'm Ms. Kiersten
   shareImage: images/social.jpg
-  twitterHandle: onepagelove
   favicon: favicon.ico
   visual:
     image:
