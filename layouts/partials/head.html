@@ -21,15 +21,11 @@
 {{ with .Site.Params.favicon }}<link rel="icon" href="{{ . | absURL }}" />{{ end }}
 
 <!-- Styles -->
-{{ $opts := dict "transpiler" "dartsass" "targetPath" "assets/css/style.css" }}
-{{ with resources.Get "sass/split.scss" | toCSS $opts | minify | fingerprint }}
-  <link rel="stylesheet" href="{{ .Permalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
-{{ end }}
+<link rel="stylesheet" href="{{ "assets/css/style.css" | absURL }}" type="text/css" media="screen" />
+
 <!-- <link rel="stylesheet" href="{{ "assets/css/split.css" | absURL }}" type="text/css" media="screen" /> -->
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-{{ if .Site.Params.custom.css.enable }}
-<link rel="stylesheet" href="{{ "css/style.css" | absURL }}" type="text/css" media="screen" />
-{{ end }}
+
 
 <!-- Image Styles -->
 {{ if .Site.Params.visual.image.enable }}
