@@ -28,14 +28,34 @@ body {
     background-color: var(--yellow-color);
 }
 
+.nav_links {
+    grid-area: links
+}
+
 .nav_links ul {
-    grid-area: links;
+    list-style-type: none;
+    
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows: auto
-    row-gap: 20px;
+    grid-template-rows: auto;
+    row-gap: 1em;
 }
 
 .nav_links li {
     background-color: var(--yellow-color);
+}
+
+li.first {
+    grid-column: 2/4;
+    grid-row: 1/2;
+}
+
+li.second {
+    grid-column: 1/3;
+    grid-row: 2/3
+}
+
+li.third {
+    grid-column: 2/4;
+    grid-row: 3
 }
