@@ -25,7 +25,9 @@ body {
 
 .introduction {
     grid-area: tagline;
+    color: var(--orange-color);
     background-color: var(--yellow-color);
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.2);
 }
 
 .nav_links {
@@ -43,6 +45,22 @@ body {
 
 .nav_links li {
     background-color: var(--yellow-color);
+    color: var(--orange-color);
+    height: 3em;
+
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: flex-start;
+    
+    text-align: start;
+}
+
+.nav_links img {
+    height: 2em;
+    padding: .5em
 }
 
 li.first {
