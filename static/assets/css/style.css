@@ -28,6 +28,8 @@ body {
     color: var(--orange-color);
     background-color: var(--yellow-color);
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.2);
+    padding: .5em;
+    margin-inline-end: 3em;
 }
 
 .nav_links {
@@ -76,4 +78,9 @@ li.second {
 li.third {
     grid-column: 2/4;
     grid-row: 3
+}
+
+.hero_image {
+    background: url("/images/kiersten_sticker.png"); 
+    box-shadow: 6px 6px 2px 4px rgba(0, 0, 0, 0.2), 0px 0px 0px 6px #FFFFFF;
 }
