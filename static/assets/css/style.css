@@ -43,6 +43,7 @@ body {
     grid-template-columns: 1fr 4fr 1fr;
     grid-template-rows: auto;
     row-gap: 1em;
+    padding-left:0;
 }
 
 .nav_links li {
@@ -88,7 +89,7 @@ li.third {
     left: -20%;
     width: 264px;
     height: 764px;
-    transform: matrix(1.00, 0.09, -0.09, 1.00, 0.00, -0.00);
+    /* transform: matrix(1.00, 0.09, -0.09, 1.00, 0.00, -0.00); */
     /* border-radius: 0px; */
     /* box-shadow: 6px 6px 2px 4px rgba(0, 0, 0, 0.2), 0px 0px 0px 6px #FFFFFF; */
 }
