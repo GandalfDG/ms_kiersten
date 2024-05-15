@@ -16,7 +16,7 @@
             {{ .Page.Content }}
         </div>
 
-        <div class="nav_links">
+        <nav class="nav_links">
             <ul>
                 <li class="first">
                     <img src="favicon.ico" />
@@ -31,7 +31,7 @@
                     <p>Contact Me</p>
                 </li>
             </ul>
-        </div>
+        </nav>
         {{ with resources.Get "images/Kiersten Sticker.png"}}
         <img class="hero_image" src="{{ .RelPermalink }}" />
         {{ end }}
