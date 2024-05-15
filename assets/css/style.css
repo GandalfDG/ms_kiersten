@@ -1,7 +1,7 @@
 :root {
     --purple-color: #C297FF;
     --yellow-color: #fff7a5;
-    --orange-color: #e45200;
+    --orange-color: #be4600;
 }
 
 body {
@@ -15,7 +15,7 @@ p {
 .main_grid {
     display: grid;
     grid-template-columns: 40% 60%;
-    grid-template-rows: 20vh auto auto;
+    grid-template-rows: 30vh auto auto;
 
     grid-template-areas:
         "nametag nametag"
@@ -34,8 +34,9 @@ p {
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.2);
     width: 80%;
     min-width: 15em;
+    max-width: 30em;
     padding: .5em;
-    font-size: small;
+    font-size: medium;
 }
 
 .nav_links {
@@ -67,6 +68,11 @@ p {
     text-align: start;
 
     z-index: 10;
+
+    min-width: fit-content;
+    text-wrap: nowrap;
+
+    padding-inline-end: .5em;
 }
 
 .nav_links img {
@@ -92,9 +98,11 @@ li.third {
 .hero_image {
     z-index: 1;
 
+    width:300%;
+    min-width: 300px;
     grid-area: hero_sticker;
     justify-self: end;
     position:relative;
-    top: -40px;
-    right: -140px;
+    top: -3%;
+    right: -80%;
 }
