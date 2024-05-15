@@ -39,6 +39,13 @@ p {
     font-size: medium;
 }
 
+.introduction a {
+    color: var(--orange-color);
+    font-weight: 600;
+    text-decoration: underline dotted 2px;
+    text-underline-offset: 2px;
+}
+
 .nav_links {
     grid-area: links
 }
@@ -100,6 +107,7 @@ li.third {
 
     width:300%;
     min-width: 300px;
+    max-width: fit-content; 
     grid-area: hero_sticker;
     justify-self: end;
     position:relative;
