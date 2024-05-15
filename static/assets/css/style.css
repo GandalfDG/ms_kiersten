@@ -8,6 +8,10 @@ body {
     background-color: var(--purple-color)
 }
 
+p {
+    margin:0;
+}
+
 .main_grid {
     display: grid;
     grid-template-columns: 2fr 3fr;
@@ -28,8 +32,6 @@ body {
     color: var(--orange-color);
     background-color: var(--yellow-color);
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.2);
-    padding: .5em;
-    margin-inline-end: 3em;
 }
 
 .nav_links {
@@ -90,6 +92,6 @@ li.third {
     top: 30vh;
     left: -30vw;
     width: 100vw;
-    min-height: 50vh;
+    /* min-height: 50vh; */
 
 }

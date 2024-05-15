@@ -7,33 +7,35 @@
 
 <body>
 
-   <div class="main_grid">
+    <div class="main_grid">
         <div class="name_tag">
             <h1>Ms. Kiersten</h1>
         </div>
 
         <div class="introduction">
-            <p>hello there</p>
+            {{ .Page.Content }}
         </div>
 
         <div class="nav_links">
             <ul>
                 <li class="first">
-                    <img src="favicon.ico"/>
+                    <img src="favicon.ico" />
                     <p>My Videos</p>
                 </li>
                 <li class="second">
-                    <img src="favicon.ico"/>
+                    <img src="favicon.ico" />
                     <p>My Blog</p>
                 </li>
                 <li class="third">
-                    <img src="favicon.ico"/>
+                    <img src="favicon.ico" />
                     <p>Contact Me</p>
                 </li>
             </ul>
         </div>
-   </div>
-   <img class="hero_image" src="images/Kiersten Sticker.png"></img>
+    </div>
+    {{ with resources.Get "images/Kiersten Sticker.png"}}
+    <img class="hero_image" src="{{ .RelPermalink }}" />
+    {{ end }}
 </body>
 
 </html>
