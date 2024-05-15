@@ -9,7 +9,7 @@
 
     <div class="main_grid">
         <div class="name_tag">
-            <h1>Ms. Kiersten</h1>
+            <h1>{{ .Page.Title }}</h1>
         </div>
 
         <div class="introduction">
@@ -32,10 +32,11 @@
                 </li>
             </ul>
         </div>
+        {{ with resources.Get "images/Kiersten Sticker.png"}}
+        <img class="hero_image" src="{{ .RelPermalink }}" />
+        {{ end }}
     </div>
-    {{ with resources.Get "images/Kiersten Sticker.png"}}
-    <img class="hero_image" src="{{ .RelPermalink }}" />
-    {{ end }}
+
 </body>
 
 </html>
