@@ -8,9 +8,13 @@
 <body>
 
     <div class="main_grid">
-        <div class="name_tag">
-            <h1>{{ .Page.Title }}</h1>
-        </div>
+        <header class="name_tag">
+            {{ with resources.Get "svgs/nametag_background.svg" }}
+            <img src="{{ .RelPermalink }}"/>
+            {{ end }}
+            <p><span>Hello!</span> my name is</p>
+            <h1>{{.Page.Title }}</h1>
+        </header>
 
         <div class="introduction">
             {{ .Page.Content }}
@@ -32,7 +36,7 @@
                 </li>
             </ul>
         </nav>
-        {{ with resources.Get "images/Kiersten Sticker.png"}}
+        {{ with resources.Get "images/kiersten_sticker_crop.png"}}
         <img class="hero_image" src="{{ .RelPermalink }}" />
         {{ end }}
     </div>
