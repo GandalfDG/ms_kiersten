@@ -32,23 +32,49 @@ p {
 
 .name_tag {
     grid-area: nametag;
-    /* display:flex;
-    flex-direction: column;
-    justify-content: space-around; */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 3fr 1fr;
+
+    max-height: 220px;
+}
+
+.name_tag * {
+    justify-self: center;
+    align-self: end;
 }
 
 .name_tag img {
-    height: 90%;
+    min-width: 380px;
+    align-self: center;
+    grid-area: 1/1/4/2;
 }
 
 .name_tag p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
     color: white;
+    text-wrap: nowrap;
+
+    grid-area: 1/1/2/2;
+
+    position: relative;
+    top: .2em;
+    
+}
+
+.name_tag p span {
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .name_tag h1 {
     font-family: 'Pacifico', cursive;
-    color: var(--handwriting_color)
+    font-size: 3rem;
+    color: var(--handwriting-color);
+    text-wrap: nowrap;
+
+    grid-area: 2/1/3/2;
 }
 
 .introduction {
