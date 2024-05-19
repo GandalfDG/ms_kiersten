@@ -32,21 +32,26 @@ p {
 
 .name_tag {
     grid-area: nametag;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 2fr 3fr 1fr;
+    display: flex;
+    flex-direction: row;
 
-    max-height: 220px;
+    justify-content: center;
 }
 
-.name_tag * {
-    justify-self: center;
-    align-self: end;
+.name_tag div {
+    
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 2fr 3fr 1fr;
+
+    height:100%;
+    width: 100%;
 }
 
 .name_tag img {
-    min-width: 380px;
-    align-self: center;
+    /* min-width: 380px; */
+    height: 100%;
+    justify-self: center;
     grid-area: 1/1/4/2;
 }
 

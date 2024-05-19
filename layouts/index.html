@@ -9,11 +9,13 @@
 
     <div class="main_grid">
         <header class="name_tag">
-            {{ with resources.Get "svgs/nametag_background.svg" }}
-            <img src="{{ .RelPermalink }}"/>
-            {{ end }}
-            <p><span>Hello!</span> my name is:</p>
-            <h1>{{.Page.Title }}</h1>
+            <div>
+                {{ with resources.Get "svgs/nametag_background.svg" }}
+                <img src="{{ .RelPermalink }}"/>
+                {{ end }}
+                <p><span>Hello!</span> my name is:</p>
+                <h1>{{.Page.Title }}</h1>
+            </div>
         </header>
 
         <div class="introduction">
