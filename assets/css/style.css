@@ -51,7 +51,7 @@ a {
 @media (min-width: 1200px) {
     .main_grid {
         grid-template-columns: 20% 10% 40% 30%;
-        grid-template-rows: 30vh 30vh 35vh auto;
+        grid-template-rows: 20vh 20vh 35vh auto;
         
         grid-template-areas: "spacer nametag nametag na"
                              "hero_sticker tagline tagline na"
@@ -143,7 +143,8 @@ a {
 }
 
 .nav_links {
-    grid-area: links
+    grid-area: links;
+    margin-inline-start: 1em;
 }
 
 .nav_links ul {
