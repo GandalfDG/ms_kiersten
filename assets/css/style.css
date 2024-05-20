@@ -16,18 +16,35 @@ body {
 }
 
 p {
-    margin:0;
+    margin: 0;
+}
+
+a {
+    color: var(--orange-color);
+    font-weight: 600;
+    text-decoration: none;
 }
 
 .main_grid {
     display: grid;
     grid-template-columns: 40% 60%;
-    grid-template-rows: 30vh auto auto;
+    grid-template-rows: 30vh auto 35vh auto;
 
     grid-template-areas:
         "nametag nametag"
         "tagline tagline"
-        "hero_sticker links";
+        "hero_sticker links"
+        "content content";
+}
+
+@media (min-width: 600px) {
+    .main_grid {
+        grid-template-columns: 30% 40% 30%;
+
+        grid-template-areas: "nametag nametag nametag"
+            "tagline tagline poop"
+            "hero_sticker content links";
+    }
 }
 
 .name_tag {
@@ -39,12 +56,12 @@ p {
 }
 
 .name_tag div {
-    
+
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 2fr 3fr 1fr;
 
-    height:100%;
+    height: 100%;
     width: 100%;
 }
 
@@ -67,10 +84,8 @@ p {
     text-wrap: nowrap;
 
     grid-area: 1/1/2/2;
+    margin-top: .9em;
 
-    position: relative;
-    top: .5em;
-    
 }
 
 .name_tag p span {
@@ -106,6 +121,14 @@ p {
     text-underline-offset: 2px;
 }
 
+@media (min-width: 600px) {
+    .introduction {
+        justify-self: end;
+        margin-right: 3em;
+        width: 60%;
+    }
+}
+
 .nav_links {
     grid-area: links
 }
@@ -117,7 +140,7 @@ p {
     grid-template-columns: 1fr 4fr 1fr;
     grid-template-rows: auto;
     row-gap: 1em;
-    padding-left:0;
+    padding-left: 0;
 }
 
 .nav_links li {
@@ -127,12 +150,6 @@ p {
 
     box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.2);
 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-
-    text-align: start;
 
     z-index: 10;
 
@@ -142,8 +159,16 @@ p {
     padding-inline-end: .5em;
 }
 
-.nav_links img {
-    height: 2em;
+.nav_links a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    text-align: start;
+}
+
+.nav_links svg {
     padding: .5em
 }
 
@@ -166,11 +191,25 @@ li.third {
     z-index: 1;
 
     width: 80vw;
-    max-width:fit-content;
+    max-width: fit-content;
     min-width: 200px;
     grid-area: hero_sticker;
     justify-self: end;
-    position:relative;
+    position: relative;
     top: 10px;
     right: -40px;
+}
+
+.content {
+    grid-area: content;
+    background-color: rgb(255, 255, 235);
+
+    z-index: 10;
+    width: 80%;
+    height: 50vh;
+    justify-self: end;
+    margin: 1em;
+    padding: .5em;
+
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.2);
 }
