@@ -39,7 +39,7 @@ a {
 
 @media (min-width: 600px) {
     .main_grid {
-        grid-template-columns: 30% 40% 30%;
+        grid-template-columns: 20% 50% 30%;
 
         grid-template-areas: "nametag nametag nametag"
             "tagline tagline poop"
@@ -165,11 +165,12 @@ a {
     align-items: center;
     justify-content: flex-start;
 
-    text-align: start;
+    text-align: center;
 }
 
 .nav_links svg {
-    padding: .5em
+    padding: .2em;
+    align-self: center;
 }
 
 li.first {
