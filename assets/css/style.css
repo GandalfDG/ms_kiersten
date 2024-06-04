@@ -10,6 +10,9 @@
     --orange-color: #be4600;
     --handwriting-color: #0c0029;
     --copyright-color: #472e69;
+
+    --breakpoint-med: 600px;
+    --breakpoint-lg: 1200px;
 }
 
 body {
@@ -49,7 +52,12 @@ a {
 }
 
 @media (min-width: 1200px) {
+    body {
+        display:flex;
+        justify-content: space-around;
+    }
     .main_grid {
+        max-width: 1400px;
         grid-template-columns: 20% 10% 40% 30%;
         grid-template-rows: 20vh 20vh 35vh auto;
         
@@ -213,7 +221,16 @@ li.third {
     justify-self: end;
     position: relative;
     top: 10px;
-    right: -40px;
+    right: -100px;
+    rotate: 10deg;
+}
+
+@media (min-width: 600px) {
+    .hero_image {
+        width: 35vw;
+        right: -110px;
+        top: -30px;
+    }
 }
 
 .content {
