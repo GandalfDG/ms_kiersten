@@ -10,11 +10,9 @@
     <div class="main_grid">
         <header class="name_tag">
             <div>
-                {{ with resources.Get "svgs/nametag_background.svg" }}
+                {{ with resources.Get "images/nametag.png" }}
                 <img src="{{ .RelPermalink }}"/>
                 {{ end }}
-                <p><span>Hello!</span> my name is:</p>
-                <h1>{{.Page.Title }}</h1>
             </div>
         </header>
 
@@ -55,6 +53,7 @@
                For now, contact me via the "Contact Me" link above for more.
             </p>
         </article>
+
 
        
     </div>
