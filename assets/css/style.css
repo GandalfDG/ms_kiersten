@@ -32,7 +32,8 @@ a {
 .main_grid {
     display: grid;
     grid-template-columns: 40% 60%;
-    grid-template-rows: 30vh auto 35vh auto;
+    grid-template-rows: auto auto 35vh auto;
+    row-gap: .5rem;
 
     grid-template-areas:
         "nametag nametag"
@@ -59,7 +60,7 @@ a {
     .main_grid {
         max-width: 1400px;
         grid-template-columns: 20% 10% 40% 30%;
-        grid-template-rows: 20vh 20vh 35vh auto;
+        grid-template-rows: auto 20vh 35vh auto;
         
         grid-template-areas: "spacer nametag nametag na"
                              "hero_sticker tagline tagline na"
