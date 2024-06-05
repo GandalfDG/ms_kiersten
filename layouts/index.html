@@ -6,62 +6,63 @@
 </head>
 
 <body>
+    <div class="fullpage">
+        <div class="main_grid">
+            <header class="name_tag">
+                <div>
+                    {{ with resources.Get "images/nametag.png" }}
+                    <img src="{{ .RelPermalink }}" />
+                    {{ end }}
+                </div>
+            </header>
 
-    <div class="main_grid">
-        <header class="name_tag">
-            <div>
-                {{ with resources.Get "images/nametag.png" }}
-                <img src="{{ .RelPermalink }}"/>
-                {{ end }}
+            <div class="introduction">
+                {{ .Page.Content }}
             </div>
-        </header>
 
-        <div class="introduction">
-            {{ .Page.Content }}
+            <nav class="nav_links">
+                <ul>
+                    <li class="first">
+                        <a href="https://www.youtube.com/@Ms.KierstensMusicCorner">
+                            <i class="fa-solid fa-video fa-2xl"></i>
+                            <p>My Videos</p>
+                        </a>
+                    </li>
+                    <li class="second">
+                        <a href="/">
+                            <i class="fa-solid fa-pen-to-square fa-2xl"></i>
+                            <p>My Blog</p>
+                        </a>
+                    </li>
+
+                    <li class="third">
+                        <a href="mailto:mskierstenmusic@gmail.com">
+                            <i class="fa-solid fa-envelope fa-2xl"></i>
+                            <p>Contact Me</p>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            {{ with resources.Get "images/kiersten-smile-small.png"}}
+            <img class="hero_image" src="{{ .RelPermalink }}" />
+            {{ end }}
+
+            <article class="content">
+                <h1>🏗️ under construction 🏗️</h1>
+                <p>check back for more information about me once the site is complete.
+                    For now, contact me via the "Contact Me" link above for more.
+                </p>
+            </article>
+
+
+
         </div>
 
-        <nav class="nav_links">
-            <ul>
-                <li class="first">
-                    <a href="https://www.youtube.com/@Ms.KierstensMusicCorner">
-                        <i class="fa-solid fa-video fa-2xl"></i>
-                        <p>My Videos</p>
-                    </a>
-                </li>
-                <li class="second">
-                    <a href="/">
-                        <i class="fa-solid fa-pen-to-square fa-2xl"></i>
-                        <p>My Blog</p>
-                    </a>
-                </li>
-               
-                <li class="third">
-                    <a href="mailto:mskierstenmusic@gmail.com">
-                        <i class="fa-solid fa-envelope fa-2xl"></i>
-                        <p>Contact Me</p>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        {{ with resources.Get "images/kiersten-smile-small.png"}}
-        <img class="hero_image" src="{{ .RelPermalink }}" />
-        {{ end }}
+        <footer>
+            <p class="copyright">&copy2024 Kiersten Case</p>
+        </footer>
 
-        <article class="content">
-            <h1>🏗️ under construction 🏗️</h1>
-            <p>check back for more information about me once the site is complete.
-               For now, contact me via the "Contact Me" link above for more.
-            </p>
-        </article>
-
-
-       
     </div>
-
-    <footer>
-        <p class="copyright">&copy2024 Kiersten Case</p>
-    </footer>
-
 </body>
 
 </html>
