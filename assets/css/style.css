@@ -27,9 +27,12 @@ body {
     
 }
 
-p {
+p, h1 {
     margin: 0;
     font-family: 'Ubuntu Condensed';
+}
+
+p {
     font-size: 15.5pt;
 }
 
@@ -125,7 +128,6 @@ a {
 }
 
 .name_tag h1 {
-    font-family: 'Pacifico', cursive;
     font-size: 3rem;
     color: var(--handwriting-color);
     text-wrap: nowrap;
