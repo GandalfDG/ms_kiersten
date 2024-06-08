@@ -29,6 +29,8 @@ body {
 
 p {
     margin: 0;
+    font-family: 'Ubuntu Condensed';
+    font-size: 15.5pt;
 }
 
 a {
