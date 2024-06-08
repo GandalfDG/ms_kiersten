@@ -27,8 +27,13 @@ body {
     
 }
 
-p {
+p, h1 {
     margin: 0;
+    font-family: 'Ubuntu Condensed';
+}
+
+p {
+    font-size: 15.5pt;
 }
 
 a {
@@ -50,7 +55,7 @@ a {
         "content content";
 }
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
     .main_grid {
         grid-template-columns: 20% 50% 30%;
 
@@ -123,7 +128,6 @@ a {
 }
 
 .name_tag h1 {
-    font-family: 'Pacifico', cursive;
     font-size: 3rem;
     color: var(--handwriting-color);
     text-wrap: nowrap;
@@ -151,7 +155,7 @@ a {
     text-underline-offset: 2px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
     .introduction {
         justify-self: center;
         margin-right: 3em;
@@ -241,7 +245,7 @@ li.third {
     rotate: 10deg;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
     .hero_image {
         width: 35vw;
         right: -110px;
@@ -249,7 +253,7 @@ li.third {
     }
 }
 
-.content {
+.content-box {
     grid-area: content;
     background-color: rgb(255, 255, 235);
 
@@ -257,9 +261,14 @@ li.third {
     width: 80%;
     height: 100%;
     justify-self: end;
-    padding-inline: .5em;
-
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.content {
+    
+    padding: .5em;
+
+
 }
 
 footer {
