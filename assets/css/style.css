@@ -251,7 +251,7 @@ li.third {
     }
 }
 
-.content {
+.content-box {
     grid-area: content;
     background-color: rgb(255, 255, 235);
 
@@ -259,9 +259,14 @@ li.third {
     width: 80%;
     height: 100%;
     justify-self: end;
-    padding-inline: .5em;
-
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.content {
+    
+    padding: .5em;
+
+
 }
 
 footer {
