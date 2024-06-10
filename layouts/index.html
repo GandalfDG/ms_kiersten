@@ -9,11 +9,9 @@
     <div class="fullpage">
         <div class="main_grid">
             <header class="name_tag">
-                <div>
-                    {{ with resources.Get "images/nametag.png" }}
-                    <img src="{{ .RelPermalink }}" />
-                    {{ end }}
-                </div>
+                {{ with resources.Get "svgs/nametag.svg" }}
+                <img src="{{ .RelPermalink }}" />
+                {{ end }}
             </header>
 
             <div class="introduction">
