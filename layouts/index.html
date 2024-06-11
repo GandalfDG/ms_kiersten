@@ -15,7 +15,7 @@
             </header>
 
             <div class="introduction">
-                {{ .Page.Content }}
+                <p>{{ .Page.Summary }}</p>
             </div>
 
             <nav class="nav_links">
@@ -47,15 +47,18 @@
 
             <div class="content-box">
                 <article class="content">
-                    <h1>🏗️ under construction 🏗️</h1>
-                    <p>check back for more information about me once the site is complete.
-                        For now, contact me via the "Contact Me" link above for more.
-                    </p>
+                    {{ .Page.Content }}
                 </article>
             </div>
 
+        </div>
 
-
+        <h2>Photo Gallery</h2>
+        <div class="photos">
+            {{ $image := resources.Get "images/blue-bunny-candid-01.jpg"}}
+            <img class="landscape" src="{{ $image.RelPermalink }}" />
+            {{ $image := resources.Get "images/blue-bunny-candid-02.jpg"}}
+            <img class="portrait" src="{{ $image.RelPermalink }}" />
         </div>
 
         <footer>
