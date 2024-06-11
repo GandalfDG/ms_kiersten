@@ -253,10 +253,14 @@ li.third {
 }
 
 .content {
-    
     padding: .5em;
+}
 
-
+.content img {
+    box-sizing: border-box;
+    max-width: 100%;
+    padding: 1em;
+    box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.2);
 }
 
 footer {
