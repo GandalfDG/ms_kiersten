@@ -22,6 +22,7 @@ body {
 .fullpage {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-between;
     min-height: 98vh;    
 }
@@ -260,6 +261,49 @@ li.third {
     box-sizing: border-box;
     max-width: 100%;
     margin-block: .5em;
+}
+
+div.photos {
+    margin-top: 1em;
+    width: 90%;
+    z-index: 10;
+    --photo-max-dimension: 500px;
+    --photo-rel-dimension: 60vw;
+
+    display: grid;
+    gap: 1em;
+    justify-items: center;
+}
+
+.photos img {
+    background-color: white;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.photos img:nth-child(even) {
+    rotate: 1deg;
+    justify-self: left;
+}
+
+.photos img:nth-child(odd) {
+    rotate: -1deg;
+    justify-self: right;
+}
+
+img.landscape {
+    width: var(--photo-rel-dimension);
+    max-width: var(--photo-max-dimension);
+    padding-block: 1em;
+    padding-inline-start: 1em;
+    padding-inline-end: 4em;
+}
+
+img.portrait {
+    height: var(--photo-rel-dimension);
+    max-height: var(--photo-max-dimension);
+    padding-inline: 1em;
+    padding-block-start: 1em;
+    padding-block-end: 4em;
 }
 
 footer {
