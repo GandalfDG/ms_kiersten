@@ -51,6 +51,12 @@
                 </article>
             </div>
 
+            <div class="photos">
+                {{ $image := resources.Get "images/blue-bunny-candid-01.jpg"}}
+                <img src="{{ $image.RelPermalink }}" />
+                {{ $image := resources.Get "images/blue-bunny-candid-02.jpg"}}
+                <img src="{{ $image.RelPermalink }}" />
+            </div>
 
 
         </div>
