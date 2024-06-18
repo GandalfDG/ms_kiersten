@@ -27,10 +27,12 @@
                         </a>
                     </li>
                     <li class="second">
-                        <a href="/">
-                            <i class="fa-solid fa-pen-to-square fa-2xl"></i>
-                            <p>My Blog</p>
+                        {{ with .Site.GetPage "/playlists" }}
+                        <a href="/playlists">
+                            <i class="fa-solid fa-music fa-2xl"></i>
+                            <p>Music Playlists</p>
                         </a>
+                        {{ end }}
                     </li>
 
                     <li class="third">
