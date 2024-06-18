@@ -7,7 +7,7 @@ disableKinds:
 - RSS
 - sitemap
 # relativeURLs: true
-uglyURLs: true
+uglyURLs: false
 # googleAnalytics: ''
 copyright: '&copy;2024 Kiersten Case'
 
