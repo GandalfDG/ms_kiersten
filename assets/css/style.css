@@ -45,6 +45,7 @@ a {
 ul {
     list-style-type: none;
 }
+
 .main_grid {
     display: grid;
     grid-template-columns: 40% 60%;
@@ -270,8 +271,8 @@ div.photos {
     margin-top: 1em;
     width: 90%;
     z-index: 10;
-    --photo-max-dimension: 500px;
-    --photo-rel-dimension: 60vw;
+    --photo-max-dimension: 50vh;
+    --photo-rel-dimension: 80vw;
 
     display: grid;
     gap: 1em;
@@ -284,12 +285,6 @@ div.photos {
     }
 }
 
-.photos img {
-    background-color: white;
-    box-sizing: border-box;
-    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.2);
-}
-
 h2 {
     z-index: 10;
     font-family: 'Ubuntu Condensed';
@@ -300,14 +295,32 @@ h2 {
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.2);
 }
 
-.photos img:nth-child(even) {
-    rotate: 1deg;
-    justify-self: right;
+.photos img {
+    background-color: white;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.2);
 }
 
 .photos img:nth-child(odd) {
+    margin-left: 3em;
+}
+
+.photos img:nth-child(even) {
+    margin-right: 3em;
+}
+
+.photos img:nth-child(3n+1) {
+    rotate: 1deg;
+    /* justify-self: right; */
+}
+
+.photos img:nth-child(3n+2) {
     rotate: -1deg;
-    justify-self: left;
+    /* justify-self: left; */
+}
+
+.photos img:nth-child(3n+3) {
+    rotate: 4deg;
 }
 
 img.landscape {
@@ -316,6 +329,7 @@ img.landscape {
     padding-block: 3%;
     padding-inline-start: 3%;
     padding-inline-end: 10%;
+    align-self: center;
 }
 
 img.portrait {
