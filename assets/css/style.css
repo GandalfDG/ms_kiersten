@@ -24,7 +24,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    min-height: 98vh;    
+    min-height: 98vh;
 }
 
 p, h1 {
@@ -71,17 +71,18 @@ ul {
 
 @media (min-width: 1200px) {
     body {
-        display:flex;
+        display: flex;
         justify-content: space-around;
     }
+
     .main_grid {
         max-width: 1400px;
         grid-template-columns: 20% 10% 40% 30%;
         grid-template-rows: auto 20vh 35vh auto;
-        
+
         grid-template-areas: "spacer nametag nametag na"
-                             "hero_sticker tagline tagline na"
-                             "hero_sticker content content links"
+            "hero_sticker tagline tagline na"
+            "hero_sticker content content links"
     }
 }
 
@@ -198,9 +199,10 @@ ul {
     text-align: center;
 }
 
-.nav_links svg {
+.nav_links box-icon {
     padding: .2em;
     align-self: center;
+    fill: var(--orange-color)
 }
 
 .nav_links i {

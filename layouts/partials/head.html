@@ -21,7 +21,6 @@
 {{ with .Site.Params.favicon }}<link rel="icon" href="{{ . | absURL }}" />{{ end }}
 
 <!-- Styles -->
-<script src="https://kit.fontawesome.com/9b5a5eeae6.js" crossorigin="anonymous"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
@@ -29,6 +28,7 @@
 {{ with resources.Get "css/style.css" | resources.Minify }}
 <link rel="stylesheet" href="{{ .RelPermalink }}" type="text/css" media="screen" />
 {{ end }}
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 
 <!-- <link rel="stylesheet" href="{{ "assets/css/split.css" | absURL }}" type="text/css" media="screen" /> -->
 <meta name="viewport" content="width=device-width,initial-scale=1" />
