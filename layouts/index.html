@@ -57,7 +57,11 @@
 
         <h2>Photo Gallery</h2>
         <div class="photos">
-            {{ range slice "images/blue-bunny-candid-01.jpg" "images/blue-bunny-candid-02.jpg"}}
+            {{ range slice 
+                "images/blue-bunny-candid-01.jpg" 
+                "images/blue-bunny-candid-02.jpg"
+                "images/candid-03.jpg"
+                "images/candid-04.jpg"}}
                 {{ with resources.Get . }}
                     {{ if  gt .Width .Height}}
                         {{ with .Resize "600x" }}
