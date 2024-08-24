@@ -65,7 +65,7 @@ ul {
         grid-template-columns: 20% 50% 30%;
 
         grid-template-areas: "nametag nametag nametag"
-            "na tagline poop"
+            "hero_sticker tagline poop"
             "hero_sticker content links";
     }
 }
@@ -154,7 +154,7 @@ ul {
     .introduction {
         justify-self: center;
         margin-right: 3em;
-        width: 60%;
+        width: 50%;
     }
 }
 
@@ -255,9 +255,15 @@ li.third {
 
     z-index: 10;
     width: 90%;
-    height: 100%;
+    height: fit-content;
     justify-self: end;
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 800px) {
+    .content-box {
+        width: 60%;
+    }
 }
 
 .content {
