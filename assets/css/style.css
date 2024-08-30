@@ -349,3 +349,17 @@ footer {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-top: 1em;
 }
+
+.contentpage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-between; */
+    min-height: 98vh;
+}
+
+img.album-art {
+    background-color: white;
+    padding: 1em;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.2);
+}
