@@ -9,8 +9,7 @@ disableKinds:
   - sitemap
 disableHugoGeneratorInject: true
 relativeURLs: true
-uglyURLs: true
-googleAnalytics: ''
+uglyURLs: false
 copyright: '&copy;2024 Jack Case'
 
 
