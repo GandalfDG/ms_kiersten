@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default " en-us" }}">
+
+<head>
+    {{ partial "head" . }}
+</head>
+
+<body>
+    <div class="contentpage">
+        <h2>{{ .Page.Summary }}</h2>
+        {{ with resources.Get "images/connecting_the_dots.jpg"}}
+        {{ with .Resize "600x"}}
+        <img class="album-art" src="{{ .RelPermalink }}" />
+        {{ end }}
+        {{ end }}
+        <a href="https://artists.landr.com/055855543127">
+            <h3><u>listen now!</u></h3>
+        </a>
+        <div class="content-box">
+            <article class="content">
+                {{ .Page.Content }}
+            </article>
+        </div>
+
+        <footer>
+            <p class="copyright">&copy2024 Kiersten Case</p>
+        </footer>
+    </div>
+</body>
