@@ -10,6 +10,7 @@
     --orange-color: #be4600;
     --handwriting-color: #0c0029;
     --copyright-color: #472e69;
+    --offwhite-color: rgb(255, 255, 235);
 
     --breakpoint-med: 600px;
     --breakpoint-lg: 1200px;
@@ -251,7 +252,7 @@ li.third {
 
 .content-box {
     grid-area: content;
-    background-color: rgb(255, 255, 235);
+    background-color: var(--offwhite-color);
 
     z-index: 10;
     width: 90%;
@@ -348,4 +349,40 @@ footer {
     color: var(--copyright-color);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-top: 1em;
+}
+
+.contentpage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 98vh;
+    
+}
+
+.contentpage .content-box {
+    margin-top: .5em;
+}
+
+img.album-art {
+    max-width: 85vw;
+    background-color: var(--offwhite-color);
+    padding: 1em;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+h3 {
+    z-index: 10;
+    font-family: 'Ubuntu Condensed';
+    font-size: 25pt;
+    color: var(--orange-color);
+    background-color: var(--yellow-color);
+    padding: .5rem 2rem;
+    margin: .5em;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 800px) {
+    img.album-art {
+        max-width: 600px;
+    }
 }

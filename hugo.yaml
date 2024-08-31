@@ -12,6 +12,13 @@ relativeURLs: true
 uglyURLs: false
 copyright: '&copy;2024 Jack Case'
 
+markup:
+  goldmark:
+    parser:
+      attribute:
+        block: true
+      wrapStandAloneImageWithinParagraph: false
+
 
 params:
   author: Kiersten Case
