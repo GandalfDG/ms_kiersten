@@ -1,7 +1,7 @@
 ---
 title: "Ms. Kiersten"
 tagline: "Welcome to Ms. Kiersten’s Music Corner!"
-summary: "My debut album, *Connecting the Dots* is out now! Find it on your favorite streaming service or get more information by clicking on *my music* below!"
+summary: "My debut album, *Connecting the Dots* is out now! [Find it on your favorite streaming service](https://artists.landr.com/055855543127) or get more information by clicking on *my music* below!"
 ---
 
 Welcome to Ms. Kiersten's Music Corner! I delight in crafting enchanting tunes
